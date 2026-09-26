@@ -1,4 +1,4 @@
-const CACHE="mi-cache-v1"
+const CACHE="mi-cache-v2"
 
 const RECURSOS=[
     "./",
@@ -11,7 +11,7 @@ const RECURSOS=[
 
 self.addEventListener("install",event=>{
     event.waitUntil(
-        cache.open(CACHE)
+        caches.open(CACHE)
         .then(cache=>cache.addAll(RECURSOS))
     );
 })
