@@ -1,4 +1,4 @@
-const CACHE="mi-cache-v2"
+const CACHE="mi-cache-v3"
 
 const RECURSOS=[
     "./",
